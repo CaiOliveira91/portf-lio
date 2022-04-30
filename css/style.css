@@ -2,10 +2,10 @@
 
 /*IMPORT*/
 
-@import url(.home.css);
-@import url(.sobre.css);
-@import url(.portifolio.css);
-@import url(.footer.css);
+@import url(home.css);
+@import url(sobre.css);
+@import url(portifolio.css);
+@import url(footer.css);
 
 
 /*BODY*/
