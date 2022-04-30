@@ -149,7 +149,7 @@ for (let i = 0; i < letters.length; i++) {
 
 TweenMax.from('nav', 2, {
   delay: 1,
-  height: '100vh' ,
+  height: '0vh' ,
   ease: Power2.easeInOut
 })
 
