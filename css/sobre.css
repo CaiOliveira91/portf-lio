@@ -1,0 +1,121 @@
+
+/*SOBRE*/
+
+
+#sobre{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: white;
+  }
+  
+  @media screen and (max-width:1200px){
+    #sobre{
+      height: 120vh;
+    }
+  }
+  
+  #sobre .prog {
+    font-size: 2rem;
+    padding: 0.5rem;
+    letter-spacing: 0.1rem;
+    text-align:center;
+    text-shadow: 0.1em 0.5em 0.2em #00ffff;
+    margin-top: 100px;
+  }
+  
+  #sobre .prog span.typed-text {
+    font-weight: normal;
+    color: #FF0099;
+  }
+  
+  .perf{
+    font-size: 3em;
+  }
+  
+  .perfil{
+  
+    width: 100%;
+    height: 80%;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-right: 2px ;
+  }
+  
+  @media screen and (max-width:1200px){
+    .perfil{
+      display: contents;
+    }
+  }
+  .foto img{
+    height: 600px;
+    margin-right: 40px;
+    margin-top: 60px;
+  }
+  
+  
+  @media screen and (max-width:800px){
+    .foto img{
+      margin-top: 0!important;
+      margin-right: 0!important;
+      height: 500px!important;
+    }
+  }
+  
+   .text-perfil {
+    position: relative;
+    color: rgb(3, 1, 1);
+    margin: 40px;
+    max-width: 800px;
+    user-select: none;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .text-perfil p {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-shadow: 0.1em 0.5em 0.2em #00080888;
+  }
+  
+  
+  .text-perfil span.active {
+    animation: smoke 10s linear forwards;
+    transform-origin: bottom;
+  }
+  
+  @keyframes smoke {
+    0% {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+    }
+    50% {
+      opacity: 1;
+      pointer-events: none;
+    }
+    100% {
+      opacity: 0;
+      filter: blur(20px);
+      transform: translateX(300px) translateY(-300px) rotate(720deg) scale(4);
+    }
+  }
+  
+  .text-perfil span{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 0.1em 0.5em 0.2em #00000a;
+  }
+  

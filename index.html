@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Caio / Front-end </Front-end></title>
+  <!---------------------Style------------demais anexadas em style.css------------>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.1.7/css/fork-awesome.min.css'>
+  <!--------------------ICONS------------------------>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!--------------------SCRIPTS------------------------>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js" integrity="sha512-6MCPs9fbSIt6mTpJH2Lbo9Kk71gcgwY85BCqJGP04x+O08W3m/OiKfMiMc4VQKYn+DCtAQwpGumWeD0cACeRsQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  <main>
+
+    <nav>
+
+      <div class="menu">
+        <ul class="nav">
+
+          <li class="list">
+            <a href="#home">Home</a>
+          </li>
+
+          <li class="list">
+            <a href="#sobre">Sobre</a>
+          </li>
+
+          <li class="list">
+            <a href="#portifolio">Portifolio</a>
+          </li>
+
+          <li class="list">
+            <a href="#contato">Contato</a>
+          </li>
+          
+        </ul>
+
+      </div>
+
+      <botton class="menu-btn" onclick="openNav()">
+        <ion-icon class= icon name="menu-outline"></ion-icon>
+        
+      </botton>         
+
+      <div onLoad="initClock()" id="timedate">
+        <a id="month">January</a>
+        <a id="day">1</a>,
+        <a id="year">0</a><br />
+        <a id="hour">12</a> :
+        <a id="min">00</a> :
+        <a id="s">00</a> :
+        <a id="millisec">000</a>
+      </div> 
+
+    </nav>
+
+    <div id="menu-btn-function">
+
+      <botton class="btn-close" onclick="closeNav()">
+        <ion-icon class="icon2" name="close-outline"></ion-icon>
+        
+      </botton>    
+    
+      
+      <div class="overlay">
+        <ul class="nav-btn">
+
+          <li class="list2">
+            <a onclick="closeNav()" href="#home" >Home</a>
+          </li>
+
+          <li class="list2">
+            <a onclick="closeNav()" href="#sobre">Sobre</a>
+          </li>
+
+          <li class="list2">
+            <a onclick="closeNav()" href="#portifolio">Portifolio</a>
+          </li>
+
+          <li class="list2">
+            <a onclick="closeNav()" href="#contato">Contato</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div> 
+
+    <section id="home">
+      <div class="main">
+        <div class="logo">
+        <span class="t">C</span>
+        <span class="t">A</span>
+        <span class="t">I</span>
+        <span class="t">O</span>
+        <span class="t">&ThinSpace;</span>
+        <span class="t">O</span>
+        <span class="t">L</span>
+        <span class="t">I</span>
+        <span class="t">V</span>
+        <span class="t">E</span>
+        <span class="t">I</span>
+        <span class="t">R</span>
+        <span class="t">A</span>
+      </div> 
+        <div class="roller">
+          <span id="rolltext">
+            HTML<br/>
+            CSS<br/>
+            JAVASCRIPT<br/>
+            PHP<br/>
+            PYTHON<br/>
+            C++<br/>
+            CREATIVE<br/>
+            FRONT-END<br/>
+            DEVELOPER<br/>
+          <span id="time">CONTATE-ME</span><br/>
+        </div>
+      </div>
+          
+
+      <div class="text">
+
+        <span class="m">W</span>
+        <span class="m">E</span>
+        <span class="m">B</span>
+        <span class="m">&ThinSpace;</span>
+        <span class="m">D</span>
+        <span class="m">E</span>
+        <span class="m">V</span>
+        <span class="m">E</span>
+        <span class="m">L</span>
+        <span class="m">O</span>
+        <span class="m">P</span>
+        <span class="m">E</span>
+        <span class="m">R</span>
+
+      </div>
+
+      <aside>
+
+        <div class="social">
+
+          <ul class="media">
+
+            <li class="linkn">
+              <a href="https://www.facebook.com/caio.jusee" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+            </li>
+
+            <li class="linkn">
+              <a href="https://www.instagram.com/caiojuse/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            </li>
+
+            <li class="linkn">
+              <a href="https://www.linkedin.com/in/caio-jose-44a8b9237/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </li>
+
+            <li class="linkn">
+              <a href="https://github.com/CaioJuse" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </aside>
+
+    </section>
+
+    <section id="sobre">
+
+      <p class="prog">Olá, eu sou Caio: <span class="typed-text"></span><span class="cursor">/</span></p>
+
+      <div class="perfil">
+
+        <div class="text-perfil">
+
+          <h2 class="smok">Web Developer</h2>
+        
+          <p>Possuo experiência  em Front-End Developer e Back-End Developer, 
+            porém com destaque para Front-End Developer. Há um ano e meio venho 
+            trabalhando de forma autônoma em Web Developer,  principalmente em:
+            Java, Python, Mongodb, MySql e HTML/CSS. Estou cursando Tecnológico 
+            em Sistemas de Internet na Universidade Estácio, além de estudar Nodejs,
+            React e PHP pró-ativamente</p>
+        
+        </div>
+
+        <div class="foto">
+          <img src="/CAIO.png">
+        </div>
+
+      </div>
+    </section>
+
+    <section id="portifolio">
+
+      <h1 class="po">Portifólio:</h1>
+      
+      <div class="popular-articles">
+        
+        <div class="mini-card-grid">
+
+          <article class="mini-card module module-article article" id="mini-post-302186">  
+            <div class="mini-article-meta">
+              <div class="tags">
+                <a href="https://css-tricks.com/tag/svg-animation/" rel="tag">SVG animation</a> 
+              </div>
+            </div>
+          </article>
+
+          <article class="mini-card module module-article article" id="mini-post-302186">  
+            <div class="mini-article-meta">
+              <div class="tags">
+                <a href="https://css-tricks.com/tag/svg-animation/" rel="tag">SVG animation</a> 
+              </div>
+            </div>
+          </article>
+
+        <article class="mini-card module module-article article" id="mini-post-302186">  
+          <div class="mini-article-meta">
+            <div class="tags">
+              <a href="https://css-tricks.com/tag/svg-animation/" rel="tag">SVG animation</a> 
+            </div>
+          </div>
+        </article>
+
+        <article class="mini-card module module-article article" id="mini-post-302186">  
+          <div class="mini-article-meta">
+            <div class="tags">
+              <a href="https://css-tricks.com/tag/svg-animation/" rel="tag">SVG animation</a> 
+            </div>
+          </div>
+        </article>
+
+        <article class="mini-card module module-article article" id="mini-post-302186">  
+          <div class="mini-article-meta">
+            <div class="tags">
+              <a href="https://css-tricks.com/tag/svg-animation/" rel="tag">SVG animation</a> 
+            </div>
+          </div>
+        </article>
+
+        <article class="mini-card module module-article article" id="mini-post-302186">  
+          <div class="mini-article-meta">
+            <div class="tags">
+              <a href="https://css-tricks.com/tag/svg-animation/" rel="tag">SVG animation</a> 
+            </div>
+          </div>
+        </article>
+
+        <article class="mini-card module module-article article" id="mini-post-302186">  
+          <div class="mini-article-meta">
+            <div class="tags">
+              <a href="https://css-tricks.com/tag/svg-animation/" rel="tag">SVG animation</a> 
+            </div>
+          </div>
+        </article>
+
+        <article class="mini-card module module-article article" id="mini-post-302186">  
+          <div class="mini-article-meta">
+            <div class="tags">
+              <a href="https://css-tricks.com/tag/svg-animation/" rel="tag">SVG animation</a> 
+            </div>
+          </div>
+        </article>
+
+        <article class="mini-card module module-article article" id="mini-post-302186">  
+          <div class="mini-article-meta">
+            <div class="tags">
+             <a href="https://css-tricks.com/tag/svg-animation/" rel="tag">SVG animation</a> 
+            </div>
+          </div>
+        </article>
+
+        <article class="mini-card module module-article article" id="mini-post-302186">  
+          <div class="mini-article-meta">
+            <div class="tags">
+              <a href="https://css-tricks.com/tag/svg-animation/" rel="tag">SVG animation</a> 
+            </div>
+          </div>
+        </article>
+
+        <article class="mini-card module module-article article" id="mini-post-302186">  
+          <div class="mini-article-meta">
+            <div class="tags">
+              <a href="https://css-tricks.com/tag/svg-animation/" rel="tag">SSDFDSFSDFDS</a> 
+            </div>
+          </div>
+        </article>
+
+        </div>
+        <!-- partial -->
+
+    </section>
+    <section id="contato">
+
+      <div class="socialcontact">
+
+        <a href="https://www.linkedin.com/in/caio-jose-44a8b9237/" target="_blank"><i class="fa fa-linkedin fa-4x icon-3d"></i></a>
+        <a href="https://github.com/CaioJuse" target="_blank"><i class="fa fa-github fa-4x icon-3d"></i></a>
+        <a href="https://www.facebook.com/caio.jusee" target="_blank"><i class="fa fa-facebook fa-4x icon-3d"></i></a>
+        <a href="https://www.instagram.com/caiojuse/" target="_blank"><i class="fa fa-instagram fa-4x icon-3d"></i></a>
+        <a href="https://wa.me/5548991782677" target="_blank"><i class="fa fa-whatsapp fa-4x icon-3d"></i></a>
+        
+      </div>
+
+      <footer>
+
+        <p class="a2022"> @2022 Caio Oliveira</p>
+
+      </footer>
+
+    </section>
+
+     
+  </main>
+  
+  <!------------------PARTICULAS----------------------------->
+  <canvas class="background"></canvas>
+  <!-------------------SCRIPT JS----------------------------------->
+    <script  src="/js/script.js"></script>
+    
+  </body>
+</html>
+
+
+  
+
